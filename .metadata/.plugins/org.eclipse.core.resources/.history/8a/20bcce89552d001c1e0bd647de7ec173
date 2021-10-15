@@ -1,0 +1,16 @@
+package br.com.fiap.test;
+
+import br.com.fiap.dao.UsuarioDAO;
+import br.com.fiap.model.Usuario;
+
+public class TesteUsuario {
+
+	public static void main(String[] args) {
+		
+		UsuarioDAO dao = new UsuarioDAO();
+		
+		Usuario u1 = new Usuario();
+
+	}
+
+}

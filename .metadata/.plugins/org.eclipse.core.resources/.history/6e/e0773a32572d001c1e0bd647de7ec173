@@ -1,0 +1,25 @@
+package br.com.fiap.test;
+
+import java.sql.SQLException;
+
+import br.com.fiap.dao.UsuarioDAO;
+import br.com.fiap.model.Produto;
+import br.com.fiap.model.Usuario;
+
+public class TesteUsuario {
+
+	public static void main(String[] args) throws SQLException {
+		
+		UsuarioDAO dao = new UsuarioDAO();
+		
+		Produto u1 = new Produto();
+		
+		u1.setId(1);
+		u1.setNome("Rafael");
+		u1.setDescricao("rafael@rafael.com");
+		
+		dao.insert(u1);
+
+	}
+
+}
